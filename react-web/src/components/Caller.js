@@ -34,7 +34,7 @@ const Caller = () => {
     return (
       <div>
         <Button
-          onClick={onSubmit('/')}
+          onClick={onSubmit('/hello')}
           variant="contained"
         >
           Test API Gateway

@@ -28,6 +28,7 @@ const Account = props => {
 
       user.authenticateUser(authDetails, {
         onSuccess: data => {
+          alert(data);
           console.log('onSuccess:', data);
           resolve(data);
         },
