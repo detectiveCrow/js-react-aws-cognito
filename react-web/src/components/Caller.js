@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { AccountContext } from './Accounts';
-import axios from "axios";
+import * as axios from "axios";
 
 import { Button, Card } from '@mui/material';
 
@@ -26,7 +26,7 @@ const Caller = () => {
             console.log(res)
             setResult(res.data.body)
           })
-          .else(error => {
+          .catch(error => {
             console.error(error)
           });
     }
